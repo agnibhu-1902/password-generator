@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    box-sizing: border-box;
+}
+
+@keyframes blink {
+    from, to {
+        opacity: 0;
+    }
+    50% {
+        opacity: 100%;
+    }
+}
+
+body {
+    background-color: #002339;
+    color: white;
+}
+
+.container {
+    width: 90%;
+    margin: 10% auto;
+    max-width: 700px;
+}
+
+#copy-icon {
+    width: 1.5em;
+    cursor: pointer;
+}
+
+.password-field {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75em;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+#password-input {
+    border: 0;
+    outline: 0;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.password-btn {
+    background-color: #019f55;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    padding: 0.7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.password-header {
+    width: 90%;
+    letter-spacing: 0.4em;
+}
+
+.password-header h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.password-title {
+    display: flex;
+    align-items: flex-start;
+}
+
+.password-title img {
+    height: 3em;
+    width: 3em;
+    margin-right: 1em;
+}
+
+.text-green {
+    color: #019f55;
+}
+
+.blink {
+    font-weight: 300;
+    animation: blink 1s infinite;
+}
+
+.password-info {
+    margin-bottom: 2em;
+    letter-spacing: 0.1em;
+}
+
+.password-info #danger {
+    color: red;
+}
+
+.password-info #warn {
+    color: yellow;
+}
+
+.password-info #good {
+    color: lightgreen;
+}
+
+.password-btn:hover, .password-btn:focus {
+    background-color: #117b49;
+}
+
+.password-btn img {
+    width: 1em;
+    margin-right: 0.5em;
+}
+
+.password-slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 45%;
+}
+
+.password-slider span {
+    margin-left: 0.5em;
+}
+
+.password-slider input {
+    width: 85%;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.password-slider input:hover, .password-slider input:focus {
+    opacity: 1;
+}
+
+.password-slider span {
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.password-action {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+    .password-header {
+        width: 100%;
+    }
+    .password-title {
+        flex-direction: column;
+        align-items: center;
+    }
+    .password-header h1, p {
+        text-align: center;
+    }
+    .password-header h1 {
+        margin: 0.75em 0;
+    }
+    .password-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .password-action {
+        flex-direction: column;
+    }
+    .password-slider {
+        margin-bottom: 2em;
+        width: 100%;
+    }
+    .password-field {
+        width: 90%;
+    }
+    .password-btn {
+        justify-content: center;
+    }
+    .password-action {
+        width: 90%;
+    }
+}
