@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Poppins;
+    font-family: 'Source Code Pro';
     box-sizing: border-box;
 }
 
@@ -15,14 +15,19 @@
 }
 
 body {
-    background-color: #002339;
+    background: hsla(204, 93%, 12%, 1);
+    background: linear-gradient(135deg, hsla(204, 93%, 12%, 1) 0%, hsla(286, 44%, 49%, 1) 100%);
+    background: -moz-linear-gradient(135deg, hsla(204, 93%, 12%, 1) 0%, hsla(286, 44%, 49%, 1) 100%);
+    background: -webkit-linear-gradient(135deg, hsla(204, 93%, 12%, 1) 0%, hsla(286, 44%, 49%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#022339", endColorstr="#9946B2", GradientType=1 );
+    background-attachment: fixed;
     color: white;
 }
 
 .container {
     width: 90%;
     margin: 10% auto;
-    max-width: 700px;
+    max-width: 800px;
 }
 
 #copy-icon {
@@ -58,23 +63,25 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: 300;
+    font-weight: 500;
     cursor: pointer;
 }
 
 .password-header {
     width: 90%;
-    letter-spacing: 0.4em;
+    letter-spacing: 0.3em;
 }
 
 .password-header h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 500;
 }
 
 .password-title {
     display: flex;
     align-items: flex-start;
+    margin-bottom: 1em;
+    letter-spacing: 0.2em;
 }
 
 .password-title img {
@@ -83,8 +90,14 @@ body {
     margin-right: 1em;
 }
 
+.password-subtitle {
+    font-size: 1.2em;
+}
+
 .text-green {
-    color: #019f55;
+    color: #64f0af;
+    font-weight: 700;
+    font-size: larger;
 }
 
 .blink {
@@ -95,10 +108,16 @@ body {
 .password-info {
     margin-bottom: 2em;
     letter-spacing: 0.1em;
+    font-size: 1.2rem;
+}
+
+.password-info span {
+    font-weight: 700;
+    font-size: 1.3rem;
 }
 
 .password-info #danger {
-    color: red;
+    color: rgb(255, 77, 0);
 }
 
 .password-info #warn {
@@ -184,5 +203,11 @@ body {
     }
     .password-action {
         width: 90%;
+    }
+}
+
+@media (max-width: 349px) {
+    .password-info {
+        text-align: center;
     }
 }

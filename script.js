@@ -47,7 +47,7 @@ button.addEventListener('click', () => {
     var passwordStrength
     if (sliderRange < 8)
         passwordStrength = '<span id="danger">Weak</span>'
-    else if (sliderRange < 15)
+    else if (sliderRange < 18)
         passwordStrength = '<span id="warn">Medium</span>'
     else
         passwordStrength = '<span id="good">Strong</span>'
