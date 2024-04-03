@@ -9,7 +9,7 @@ var typeTimer = setInterval(() => {
         clearInterval(typeTimer)
 }, 800)
 
-let sliderRange = 4
+let sliderRange = 10
 const range = document.querySelector('.password-slider input')
 range.addEventListener('input', () => {
     if (range.value < 4) {
